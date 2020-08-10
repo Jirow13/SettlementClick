@@ -15,7 +15,7 @@ namespace ExitSettlement
 			if (!mouseOverFaceIndex.IsValid())
 				return;
 
-			if (PlayerSiege.Current != null || MobileParty.MainParty.SiegeEvent != null)
+			if (PlayerSiege.PlayerSiegeEvent != null || MobileParty.MainParty.SiegeEvent != null)
 				return;
 
 			if (mapState(__instance) != null && mapState(__instance).AtMenu)
